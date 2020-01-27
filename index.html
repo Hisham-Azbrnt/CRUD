@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container pt-5">
+
+    <div class="form-group">
+      <label>Product Name :</label>
+      <input onkeyup="this.value" id="productNameInp" class="form-control">
+      <div id="alertName" class="alert alert-danger">must be includes 4 or 5 or 6 or 7 or 8 letters</div>
+    </div>
+
+    <div class="form-group">
+      <label>Product Price :</label>
+      <input id="productPriceInp" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Product Brand Name :</label>
+      <input id="productBrandInp" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>Product Descreption :</label>
+      <textarea id="productDescInp" class="form-control"></textarea>
+    </div>
+
+    <button id="addBtn" onclick="addProduct()" class="btn btn-outline-info mt-3">Welcome</button>
+  </div>
+
+  <div class="container-fluid">
+    <h2 class="text-center py-5">Our Product</h2>
+
+    <input onkeyup="searchProducts(this.value)" placeholder="Search" class="form-control w-50 m-auto">
+
+    <div class="row mt-5" id="productsRow">
+
+    </div>
+  </div>
+
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
